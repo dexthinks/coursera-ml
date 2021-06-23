@@ -30,11 +30,12 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
+# size(X) = ans = 5000    401
+# size(all_theta) = ans = 10   401
 
-
-
-
-
+xTheta = sigmoid(X * all_theta');
+[maxVal, index] = max(xTheta, [], 2);
+p = index;
 
 % =========================================================================
 
